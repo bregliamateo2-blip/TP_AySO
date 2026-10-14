@@ -1,0 +1,52 @@
+ssh-keygen
+cat $HOME/.ssh/*.pbu
+cat $HOME/.ssh/*.pub
+mkdir -p ~/repogit
+cd ~/repogit
+git clone git@github.com:bregliamateo2-blip/TP_AySO.git
+cd TP_AySO
+pwd
+ls -1
+man grep
+grep VAGRANT /etc/shadow
+grep vagrant /etc/shadow
+grep -i Vagrant /etc/shadow
+sudo grep -i vagrant /etc/shadow
+sudo grep -i vagrant /etc/shador | awk -F: '{print $2}' > pass_usuario.txt
+sudo grep -i vagrant /etc/shadow | awk -F: '{print $2}' > pass_usuario.txt
+cat pass_usuario.txt
+echo "Usuario=$(whoami)" >> pass_usuario.txt
+cat pass_usuario.txt
+git config --global user.name "Mateo Breglia"
+git config --global user.email "bregliamateo2@gmail.com"
+git add pass_usuario.txt
+git commit -m "agrega pass_usuario.txt con hash de vagrant y usuario"
+git push origin main
+ls
+ls -la $HOME > permisos.txt
+cat permisos.txt
+echo 'ls -la $HOME > permisos.txt' >> permisos.txt
+cat permisos.txt
+greep 'root' /etc/passwd
+grep -v '^root' /etc/passwd | sort | head -n 10
+grep -v '^root' /etc/passwd | head -n 10 | awk -F: '{print $1}' | sort > lista_ordenada
+cat lista_orfenada
+cat lista_ordenada
+cat >> README.md << EOF
+# Trabajo Práctico - AySO
+Alumno: Mateo Breglia
+Repositorio consignas de Arquitectura y Sistemas Operativos.
+EOF
+
+cat README.md
+exit
+cd ~/repogit/TP_AySO
+mkdir -p $HOME/universidad/{alumnos/legajos{1..15},profesores/legajos{1..5}}
+ls -R $HOME/universidad
+echo '#!/bin/bash' > script_dir.sh
+echo 'echo "Estructura de la universidad creada con éxito:"' >> script_dir.sh
+echo 'ls -R $HOME/universidad' >> script_dir.sh
+./script_dir.sh
+chmod +x script_dir.sh
+./script_dir.sh
+history -a
